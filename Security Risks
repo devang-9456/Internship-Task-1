@@ -1,0 +1,33 @@
+General Security Risks of Open Ports
+
+| Risk                            | Description                                                                                                     |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Unauthorized Access**         | Attackers can connect to exposed services and try brute force, credential stuffing, or exploit vulnerabilities. |
+| **Information Leakage**         | Some services expose version numbers and configurations, aiding reconnaissance.                                 |
+| **Denial of Service (DoS)**     | Attackers can flood open ports to exhaust system resources.                                                     |
+| **Malware Entry Points**        | Backdoors and malware often exploit open ports to gain or maintain access.                                      |
+| **Pivoting & Lateral Movement** | Once inside, attackers can use open ports to move across the network.                                           |
+
+
+
+| Port          | Protocol | Common Service                                  | Risks                                                                          |
+| ------------- | -------- | ----------------------------------------------- | ------------------------------------------------------------------------------ |
+| **20/21**     | TCP      | FTP                                             | Cleartext credentials, anonymous login, directory traversal, buffer overflows. |
+| **22**        | TCP      | SSH                                             | Brute-force attacks, weak key management, outdated versions.                   |
+| **23**        | TCP      | Telnet                                          | Unencrypted communication, credentials in plaintext. Very insecure.            |
+| **25**        | TCP      | SMTP                                            | Open relays for spam, spoofing, DoS via malformed inputs.                      |
+| **53**        | UDP/TCP  | DNS                                             | DNS amplification attacks, poisoning, tunneling for data exfiltration.         |
+| **67/68**     | UDP      | DHCP                                            | Rogue DHCP servers, IP spoofing, denial of service.                            |
+| **80**        | TCP      | HTTP                                            | XSS, CSRF, directory traversal, injection attacks if web app is insecure.      |
+| **110**       | TCP      | POP3                                            | Cleartext passwords, weak auth, potential mailbox access.                      |
+| **143**       | TCP      | IMAP                                            | Similar to POP3, vulnerable to MITM if not secured.                            |
+| **161/162**   | UDP      | SNMP                                            | Default community strings, data leakage, remote configuration.                 |
+| **443**       | TCP      | HTTPS                                           | Weak SSL/TLS config, certificate issues, web app vulnerabilities.              |
+| **445**       | TCP      | SMB                                             | EternalBlue, WannaCry, file sharing exploits, lateral movement.                |
+| **3306**      | TCP      | MySQL                                           | SQL injection, weak credentials, unauthorized data access.                     |
+| **3389**      | TCP      | RDP                                             | Brute-force attacks, BlueKeep vulnerability, screen hijacking.                 |
+| **5900**      | TCP      | VNC                                             | No/weak authentication, screen hijacking, remote control.                      |
+| **8080**      | TCP      | HTTP-alt (often used by proxies or web servers) | Same issues as HTTP on port 80 if exposed.                                     |
+| **6379**      | TCP      | Redis                                           | No authentication by default, full access if exposed.                          |
+| **9200/9300** | TCP      | Elasticsearch                                   | Data exfiltration, no auth by default, remote code execution.                  |
+| **11211**     | TCP/UDP  | Memcached                                       | DDoS amplification, sensitive data exposure.                                   |
