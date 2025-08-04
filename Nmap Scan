@@ -1,0 +1,66 @@
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-04 20:24 +0530
+Nmap scan report for 192.168.0.1
+Host is up (0.0057s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+1900/tcp open  upnp
+MAC Address: 30:68:93:72:0C:30 (TP-Link Systems)
+
+Nmap scan report for 192.168.0.27
+Host is up (0.047s latency).
+All 1000 scanned ports on 192.168.0.27 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 50:28:4A:81:8C:51 (Intel Corporate)
+
+Nmap scan report for 192.168.0.29
+Host is up (0.0085s latency).
+All 1000 scanned ports on 192.168.0.29 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: A2:0B:53:89:4E:61 (Unknown)
+
+Nmap scan report for 192.168.0.100
+Host is up (0.012s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+6000/tcp open  X11
+6001/tcp open  X11:1
+MAC Address: D8:47:32:F8:E8:B0 (TP-Link Technologies)
+
+Nmap scan report for 192.168.0.201
+Host is up (0.028s latency).
+All 1000 scanned ports on 192.168.0.201 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: A0:6F:AA:E8:70:39 (LG Innotek)
+
+Nmap scan report for 192.168.0.236
+Host is up (0.0076s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+8009/tcp open  ajp13
+MAC Address: 40:A9:CF:12:10:9D (Amazon Technologies)
+
+Nmap scan report for 192.168.0.250
+Host is up (0.0071s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+6668/tcp open  irc
+MAC Address: 38:A5:C9:79:77:01 (Tuya Smart)
+
+Nmap scan report for 192.168.0.158
+Host is up (0.00021s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+1042/tcp open  afrog
+1043/tcp open  boinc
+
+Nmap done: 256 IP addresses (8 hosts up) scanned in 67.13 seconds
