@@ -1,0 +1,46 @@
+Ipconfig
+ IPv4 Address. . . . . . . . . . . : 192.168.0.158
+ Subnet Mask . . . . . . . . . . . : 255.255.255.0
+
+Nmap Scan results
+
+ 192.168.0.1
+  PORT     STATE SERVICE
+  53/tcp   open  domain   #DNS (Domain Name System) - Translates domain names into IP addresses.
+  80/tcp   open  http	#HTTP (Hypertext Transfer Protocol) - Used for browsing the web.
+  443/tcp  open  https	#HTTPS (Hypertext Transfer Protocol Secure) - Secure browsing, using encryption.
+  1900/tcp open  upnp	#primarily used for Simple Service Discovery Protocol (SSDP), which is a part of the Universal Plug and Play (UPnP) framework. It enables automatic discovery of devices and services on a local network, like printers, smart TVs, and media servers.
+
+ 192.168.0.27
+  All 1000 scanned ports on 192.168.0.27 are in ignored states.
+
+ 192.168.0.29
+  All 1000 scanned ports on 192.168.0.29 are in ignored states.
+
+ 192.168.0.100
+  PORT     STATE SERVICE
+  22/tcp   open  ssh	#SSH (Secure Shell) - Provides a secure channel for remote login and other network services.
+  80/tcp   open  http	#HTTP (Hypertext Transfer Protocol) - Used for browsing the web.
+  6000/tcp open  X11	#Port 6000 is primarily associated with the X Window System, often referred to as X11. This system provides the graphical user interface (GUI) for many Unix-like operating systems, including Linux.
+  6001/tcp open  X11:1	#primarily used by the X Window System (X11), specifically for communication between an X client and an X server over a network. This allows users to remotely access and control graphical interfaces on other systems.
+
+ 192.168.0.201
+  All 1000 scanned ports on 192.168.0.201 are in ignored states.
+
+ 192.168.0.236
+  PORT     STATE SERVICE
+  8009/tcp open  ajp13	#primarily used for the Apache JServ Protocol (AJP) connection between a web server (like Apache HTTP Server) and an application server (like Tomcat). This protocol allows the web server to proxy requests to the application server for dynamic content processing. 
+
+ 192.168.0.250
+  PORT     STATE SERVICE
+  6668/tcp open  irc	#commonly associated with UnrealIRCd, a popular IRC (Internet Relay Chat) server. It's often used as a default port for UnrealIRCd's main communication channel.
+
+ 192.168.0.158
+  PORT     STATE SERVICE
+  135/tcp  open  msrpc	#primarily used for Remote Procedure Call (RPC) services in Windows environments, facilitating communication between different applications and systems.
+  139/tcp  open  netbios-ssn	#primarily used by the NetBIOS Session Service, which enables file and printer sharing and other network services over a local area network (LAN) in Windows operating systems. 
+  445/tcp  open  microsoft-ds	#primarily used for Server Message Block (SMB) over TCP/IP, particularly in Windows environments, for file and printer sharing.
+  902/tcp  open  iss-realsecure	#primarily used for VMware vSphere management, specifically for communication between the vSphere Client, ESXi hosts, and vCenter Server.
+  912/tcp  open  apex-mesh	#primarily associated with the APEX (Application Exchange Core) protocol, specifically for relaying messages between endpoints. 
+  1042/tcp open  afrog	#Port 1042 is a registered port, specifically within the range of 1024 to 49151. It's commonly used for "any private mail system" and is often associated with the Local Mail Transfer Protocol (LMTP). 
+  1043/tcp open  boinc	#Port 1043 is not a widely recognized or standardized port number with a specific, assigned function like those in the well-known ports range (0-1023). It typically falls within the ephemeral/dynamic port range (1024-65535), which is used for dynamically assigned ports by applications. While it could be used by a custom application or service, there's no inherent, pre-defined meaning for port 1043 in networking protocols or common services. 
