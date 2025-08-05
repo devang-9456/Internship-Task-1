@@ -16,4 +16,4 @@ Discover open ports on devices in the local network and understand network expos
 nmap -sS 192.168.0.1/24
 
 ## Wireshark Trace
-Did not produce any trace while the command ran.
+Produced ping from the IP address list. Observed the TCP connection link from the WiFi IPv4 address to the internet IP and the Acknowledgement(ACK) message.
